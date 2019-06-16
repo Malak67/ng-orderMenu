@@ -2,9 +2,7 @@ import { State, Action, StateContext, Selector } from '@ngxs/store';
 import { AppStateModel, Menu } from './app-state.model';
 import {
   SetMenu,
-  SetFoodItem,
-  AddToCart,
-  GetCart,
+  SetFoodItem
 } from './app-state.actions';
 import { AppService } from '../app.service';
 import { map, catchError } from 'rxjs/operators';
@@ -13,7 +11,6 @@ import { of } from 'rxjs';
 @State<AppStateModel>({
   name: 'App',
   defaults: {
-    cart: null,
     menu: {
       categories: []
     },

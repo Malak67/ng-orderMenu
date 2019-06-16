@@ -1,16 +1,10 @@
 export interface AppStateModel {
   menu: Menu;
-  cart: Cart;
   selectedFoodItem: SelectedFoodItem;
 }
 
 export interface Menu {
   categories: Array<FoodCategories>;
-}
-
-export interface Cart {
-  foodItems: Array<FoodItem>;
-  totalPrice: number;
 }
 
 export interface SelectedFoodItem {
