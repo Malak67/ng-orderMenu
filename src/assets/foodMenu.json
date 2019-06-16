@@ -1,0 +1,254 @@
+{
+  "categories": [
+    {
+      "name": "Pizza",
+      "foodItems": [
+        {
+          "name": "Margherita",
+          "price": "6",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Extra cheese",
+                  "price": "1"
+                }
+              ]
+            }
+          ],
+          "image": "https://diethood.com/wp-content/uploads/2018/12/Keto-Pizza-29.jpg",
+          "description": "with garlic and oil"
+        },
+        {
+          "name": "Diavola",
+          "price": "8",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Pepperoni",
+                  "price": "1"
+                },
+                {
+                  "name": "Chilli",
+                  "price": "0.6"
+                },
+                {
+                  "name": "Extra cheese",
+                  "price": "1"
+                }
+              ]
+            }
+          ],
+          "image": "https://trentapizza.co.uk/wp-content/uploads/2016/07/pizza_diavola.jpg",
+          "description": "spicy little devil"
+        },
+        {
+          "name": "Carnivora",
+          "price": "9",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Pepperoni",
+                  "price": "1"
+                },
+                {
+                  "name": "Bacon",
+                  "price": "1"
+                },
+                {
+                  "name": "Onions",
+                  "price": "1"
+                },
+                {
+                  "name": "Sausage",
+                  "price": "0.5"
+                },
+                {
+                  "name": "Mushrooms",
+                  "price": "1"
+                },
+                {
+                  "name": "Extra cheese",
+                  "price": "1"
+                }
+              ]
+            }
+          ],
+          "image": "http://divinopizza.ro/wp-content/uploads/2015/05/pizza-misto-carne.jpg",
+          "description": "full of meat"
+        },
+        {
+          "name": "Rustica",
+          "price": "8",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Corn",
+                  "price": "0.5"
+                },
+                {
+                  "name": "Pepperoni",
+                  "price": "1"
+                },
+                {
+                  "name": "Bacon",
+                  "price": "1"
+                },
+                {
+                  "name": "Onions",
+                  "price": "1"
+                },
+                {
+                  "name": "Sausage",
+                  "price": "0.5"
+                },
+                {
+                  "name": "Mushrooms",
+                  "price": "1"
+                },
+                {
+                  "name": "Extra cheese",
+                  "price": "1"
+                },
+                {
+                  "name": "Black olives",
+                  "price": "1"
+                }
+              ]
+            }
+          ],
+          "image": "https://deliitaliano.com/wp-content/uploads/2016/11/Rustica-Pizza.jpg",
+          "description": "cheeses and meats"
+        },
+        {
+          "name": "Capriciosa",
+          "price": "9",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Pepperoni",
+                  "price": "1"
+                },
+                {
+                  "name": "Mushrooms",
+                  "price": "1"
+                },
+                {
+                  "name": "Extra cheese",
+                  "price": "1"
+                },
+                {
+                  "name": "Black olives",
+                  "price": "1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "addons": [
+        {
+          "name": "Crust",
+          "choices": [
+            {
+              "name": "Fluffy",
+              "price": "0"
+            },
+            {
+              "name": "Crispy",
+              "price": "0"
+            }
+          ]
+        }
+      ],
+      "image": "https://peopledotcom.files.wordpress.com/2019/02/gettyimages-938742222.jpg"
+    },
+    {
+      "name": "Pasta",
+      "foodItems": [
+        {
+          "name": "Carbonara",
+          "price": "12",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Bacon",
+                  "price": "1"
+                },
+                {
+                  "name": "Parmesan",
+                  "price": "1.2"
+                }
+              ]
+            }
+          ],
+          "image": "https://www.simplyrecipes.com/wp-content/uploads/2012/02/pasta-carbonara-horiz-a-1200.jpg",
+          "description": "made with egg, hard cheese, guanciale, and black pepper"
+        },
+        {
+          "name": "Milanese",
+          "price": "10",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Mushrooms",
+                  "price": "1"
+                },
+                {
+                  "name": "Parmesan",
+                  "price": "1.2"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Amatriciana",
+          "price": "9",
+          "image": "https://www.kitchensanctuary.com/wp-content/uploads/2017/04/Amatriciana-pasta-recipe-square-FS.jpg",
+          "addons": [
+            {
+              "name": "Extra Toppings",
+              "choices": [
+                {
+                  "name": "Parmesan",
+                  "price": "1.2"
+                }
+              ]
+            }
+          ],
+          "description": "guanciale, pecorino cheese from Amatrice, tomato"
+        }
+      ],
+      "addons": [
+        {
+          "name": "Pasta type",
+          "choices": [
+            {
+              "name": "Penne",
+              "price": "0"
+            },
+            {
+              "name": "Spaghetti",
+              "price": "0"
+            }
+          ]
+        }
+      ],
+      "image": "https://hips.hearstapps.com/delish/assets/17/36/1504715566-delish-fettuccine-alfredo.jpg"
+    }
+  ]
+}

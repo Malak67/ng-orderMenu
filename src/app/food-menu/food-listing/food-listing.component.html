@@ -1,0 +1,27 @@
+<div class="d-flex justify-content-center">
+  <div *ngIf="(getMenu | async) as  menu">
+    <h2 class="text-center">Order Menu</h2>
+    <div *ngFor="let category of menu.categories; let i = index" class="mt-1 products">
+      <div class="p-3 m-3 menu-category">
+        <div class="flex-grow-1 text-center">
+          <img [src]="category.image"/>
+          <h3 class="pl-3 ">{{category.name}}</h3>
+        </div>
+        <div *ngFor="let food of category.foodItems"
+          (click)="showDetails(category.addons, food)"
+          class="p-3 m-1 food-listing d-flex">
+        <div class="flex-grow-1">
+          <img [src]="food.image? food.image : '/assets/images/placeholder.png'"/>
+          <div>
+            <h3 class="pl-3">{{food.name}}</h3>
+            <p *ngIf="food.description" class="food-description ml-2">({{food.description}})</p>
+          </div>
+        </div>
+        <div>
+          <span style="min-width: 80px;">{{food.price | number : '1.2-2'}} RON</span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>

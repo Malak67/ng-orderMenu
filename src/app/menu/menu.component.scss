@@ -1,0 +1,52 @@
+.products {
+  background: rgb(219, 218, 216);
+  height: 100%;
+  border: 2px solid rgb(192, 187, 186);
+}
+
+.addons {
+  background: rgb(202, 200, 197);
+  border: 2px solid rgb(150, 142, 140);
+}
+
+.menu-category {
+  background: white;
+  > div {
+    display: inherit;
+  }
+  > div > img {
+    width: 80px;
+    height: 80px;
+  }
+  > div > i {
+    cursor: pointer;
+  }
+}
+
+.addon-menu {
+  > h5 {
+    background: rgb(177, 176, 174);
+  }
+  > div {
+    background: rgb(219, 218, 216);
+    border-bottom: 2px solid white;
+  }
+}
+
+.food-description {
+  font-style: italic;
+}
+
+.food-category {
+  cursor: pointer;
+  margin-left: 6rem !important;
+  background: white;
+  width: 100%;
+  > div {
+    display: inherit;
+  }
+  > div > img {
+    width: 80px;
+    height: 80px;
+  }
+}

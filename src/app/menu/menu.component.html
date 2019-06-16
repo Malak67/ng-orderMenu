@@ -1,0 +1,67 @@
+<div *ngIf="(getMenu | async) as  menu">
+
+  <h2 class="text-center">Food Menu Detailed</h2>
+  <p class="text-center">
+    <a routerLink="food" class="btn btn btn-outline-info">
+      <span>Go To Order Menu</span>
+    </a>
+  </p>
+  <div class="row mt-5">
+    <div class="col-8 products">
+      <div *ngFor="let category of menu.categories; let i = index" class="ml-2">
+        <div class="p-3 m-3 menu-category d-flex">
+          <div class="flex-grow-1">
+            <img [src]="category.image"/>
+            <h3 class="pl-3">{{category.name}}</h3>
+          </div>
+          <div>
+            <i *ngIf="showIndex !== i" class="material-icons" (click)="showItems(i, category.addons)">expand_more</i>
+            <i *ngIf="showIndex === i" class="material-icons" (click)="showIndex = null">expand_less</i>
+          </div>
+        </div>
+        <div *ngIf="i === showIndex" class="row">
+          <div *ngFor="let food of category.foodItems"
+            (click)="selectFoodAddons(food.addons)"
+            class="p-3 m-3 ml-5 food-category d-flex">
+            <div class="flex-grow-1">
+              <img [src]="food.image? food.image : '/assets/images/placeholder.png'"/>
+              <div>
+                <h3 class="pl-3">{{food.name}}</h3>
+                <p *ngIf="food.description" class="food-description ml-2">({{food.description}})</p>
+              </div>
+            </div>
+            <div>
+              <span style="min-width: 80px;">{{food.price | number : '1.2-2'}} RON</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <h4>Choices & Addons</h4>
+      <ng-container  *ngIf="(categoryAddons$ | async) as addons" >
+        <div *ngFor="let addon of addons" class="p-2 addon-menu">
+          <h5 class="p-2">{{addon.name}}</h5>
+          <div *ngFor="let choice of addon.choices" class="p-2">
+            <div class="row">
+              <div class="col">{{choice.name}}</div>
+              <div class="col">{{choice.price | number : '1.2-2'}}</div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+      <ng-container  *ngIf="(foodAddons$ | async) as addons" >
+        <div *ngFor="let addon of addons" class="p-2 addon-menu">
+          <h5 class="p-2">{{addon.name}}</h5>
+          <div *ngFor="let choice of addon.choices" class="p-2">
+            <div class="row">
+              <div class="col">{{choice.name}}</div>
+              <div class="col">{{choice.price | number : '1.2-2'}}</div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+
+</div>

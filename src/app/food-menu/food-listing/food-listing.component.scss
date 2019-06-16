@@ -1,0 +1,28 @@
+.menu-category {
+  > div {
+    display: inherit;
+  }
+  > div > img {
+    width: 160px;
+    height: 80px;
+  }
+  > div > i {
+    cursor: pointer;
+  }
+}
+.products {
+  background: rgb(219, 218, 216);
+  border: 2px solid rgb(192, 187, 186);
+}
+
+.food-listing {
+  background: white;
+  cursor: pointer;
+  > div {
+    display: inherit;
+  }
+  > div > img {
+    width: 80px;
+    height: 80px;
+  }
+}
