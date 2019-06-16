@@ -5,7 +5,10 @@ import { FoodDetailsComponent } from './food-details/food-details.component';
 
 const routes: Routes = [
   {
-    path: '', component: FoodListingComponent
+    path: '', pathMatch: 'full', redirectTo: 'listing'
+  },
+  {
+    path: 'listing', component: FoodListingComponent,
   },
   {
     path: 'details', component: FoodDetailsComponent
